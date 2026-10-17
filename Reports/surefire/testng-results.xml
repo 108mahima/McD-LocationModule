@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="5" ignored="0" total="22" passed="12" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-15T23:58:44 IST" name="McD Location Module Suite" finished-at="2026-10-16T00:08:54 IST" duration-ms="610623">
+    <groups>
+      <group name="negative">
+        <method signature="LocationNegativeTest.verifyRestaurantsNearbyWithoutLocation()[pri:10, instance:testModules.location.tests.LocationNegativeTest@76505305]" name="verifyRestaurantsNearbyWithoutLocation" class="testModules.location.tests.LocationNegativeTest"/>
+        <method signature="LocationNegativeTest.verifyInvalidMobileNumberIsRejected(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:testModules.location.tests.LocationNegativeTest@76505305]" name="verifyInvalidMobileNumberIsRejected" class="testModules.location.tests.LocationNegativeTest"/>
+        <method signature="LocationNegativeTest.verifyMobileNumberMaxLength(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testModules.location.tests.LocationNegativeTest@76505305]" name="verifyMobileNumberMaxLength" class="testModules.location.tests.LocationNegativeTest"/>
+      </group> <!-- negative -->
+      <group name="regression">
+        <method signature="LocationModuleTest.verifyHomePageTitle()[pri:1, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyHomePageTitle" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyHomePageUrl()[pri:2, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyHomePageUrl" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyLocationBarDisplayedAtTop()[pri:3, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyLocationBarDisplayedAtTop" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyLocationBarOpensSelectDeliveryAddress()[pri:4, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyLocationBarOpensSelectDeliveryAddress" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyGuestIsAskedToLoginToSelectAddress()[pri:5, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyGuestIsAskedToLoginToSelectAddress" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyAddressPanelClosesWithBackArrow()[pri:6, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyAddressPanelClosesWithBackArrow" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyDeliveryModeOptions()[pri:7, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyDeliveryModeOptions" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyLocationBarRetainedAfterRefresh()[pri:8, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyLocationBarRetainedAfterRefresh" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyRestaurantsNearbyNavigation()[pri:9, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyRestaurantsNearbyNavigation" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationNegativeTest.verifyRestaurantsNearbyWithoutLocation()[pri:10, instance:testModules.location.tests.LocationNegativeTest@76505305]" name="verifyRestaurantsNearbyWithoutLocation" class="testModules.location.tests.LocationNegativeTest"/>
+        <method signature="LocationNegativeTest.verifyInvalidMobileNumberIsRejected(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:testModules.location.tests.LocationNegativeTest@76505305]" name="verifyInvalidMobileNumberIsRejected" class="testModules.location.tests.LocationNegativeTest"/>
+        <method signature="LocationNegativeTest.verifyMobileNumberMaxLength(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testModules.location.tests.LocationNegativeTest@76505305]" name="verifyMobileNumberMaxLength" class="testModules.location.tests.LocationNegativeTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LocationModuleTest.verifyHomePageTitle()[pri:1, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyHomePageTitle" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyHomePageUrl()[pri:2, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyHomePageUrl" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyLocationBarDisplayedAtTop()[pri:3, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyLocationBarDisplayedAtTop" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyLocationBarOpensSelectDeliveryAddress()[pri:4, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyLocationBarOpensSelectDeliveryAddress" class="testModules.location.tests.LocationModuleTest"/>
+        <method signature="LocationModuleTest.verifyRestaurantsNearbyNavigation()[pri:9, instance:testModules.location.tests.LocationModuleTest@7d8995e]" name="verifyRestaurantsNearbyNavigation" class="testModules.location.tests.LocationModuleTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-10-15T23:58:44 IST" name="Location Module Tests" finished-at="2026-10-16T00:08:54 IST" duration-ms="610623">
+      <class name="testModules.location.tests.LocationNegativeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-15T23:58:44 IST" name="setUp" finished-at="2026-10-15T23:59:03 IST" duration-ms="19323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyRestaurantsNearbyWithoutLocation()[pri:10, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-15T23:59:03 IST" name="verifyRestaurantsNearbyWithoutLocation" description="TC_LOC_10: Restaurants Nearby without a shared location shows &#039;not served&#039; message" finished-at="2026-10-16T00:00:41 IST" duration-ms="97889" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Location bar never loaded from the backend (shows '') - see defect DEF_LOC_01]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Location bar never loaded from the backend (shows '') - see defect DEF_LOC_01
+at pages.LocationPage.assertLocationBarReady(LocationPage.java:210)
+at pages.LocationPage.openRestaurantsNearby(LocationPage.java:197)
+at testModules.location.tests.LocationNegativeTest.verifyRestaurantsNearbyWithoutLocation(LocationNegativeTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRestaurantsNearbyWithoutLocation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:00:41 IST" name="tearDown" finished-at="2026-10-16T00:00:44 IST" duration-ms="2600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:00:44 IST" name="setUp" finished-at="2026-10-16T00:00:47 IST" duration-ms="3192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRestaurantsNearbyWithoutLocation()[pri:10, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:00:47 IST" name="verifyRestaurantsNearbyWithoutLocation" description="TC_LOC_10: Restaurants Nearby without a shared location shows &#039;not served&#039; message" finished-at="2026-10-16T00:02:19 IST" duration-ms="92642" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01
+at pages.LocationPage.assertLocationBarReady(LocationPage.java:210)
+at pages.LocationPage.openRestaurantsNearby(LocationPage.java:197)
+at testModules.location.tests.LocationNegativeTest.verifyRestaurantsNearbyWithoutLocation(LocationNegativeTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRestaurantsNearbyWithoutLocation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:02:20 IST" name="tearDown" finished-at="2026-10-16T00:02:21 IST" duration-ms="1538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:02:23 IST" name="setUp" finished-at="2026-10-16T00:02:27 IST" duration-ms="3675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyInvalidMobileNumberIsRejected(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:02:27 IST" name="verifyInvalidMobileNumberIsRejected" description="TC_LOC_11: Invalid mobile number keeps &#039;Verify Mobile&#039; disabled (address login gate)" data-provider="invalidMobileNumbers" finished-at="2026-10-16T00:02:37 IST" duration-ms="9881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_LOC_11_A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Less than 10 digits (BVA: 5)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidMobileNumberIsRejected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:02:37 IST" name="tearDown" finished-at="2026-10-16T00:02:37 IST" duration-ms="665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:02:37 IST" name="setUp" finished-at="2026-10-16T00:02:42 IST" duration-ms="4855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyInvalidMobileNumberIsRejected(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:02:42 IST" name="verifyInvalidMobileNumberIsRejected" description="TC_LOC_11: Invalid mobile number keeps &#039;Verify Mobile&#039; disabled (address login gate)" data-provider="invalidMobileNumbers" finished-at="2026-10-16T00:03:41 IST" duration-ms="58709" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_LOC_11_B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Boundary: 9 digits]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[987654321]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login page should load expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login page should load expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected(LocationNegativeTest.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidMobileNumberIsRejected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:03:41 IST" name="tearDown" finished-at="2026-10-16T00:03:43 IST" duration-ms="1912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:03:43 IST" name="setUp" finished-at="2026-10-16T00:03:49 IST" duration-ms="5812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyInvalidMobileNumberIsRejected(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:03:49 IST" name="verifyInvalidMobileNumberIsRejected" description="TC_LOC_11: Invalid mobile number keeps &#039;Verify Mobile&#039; disabled (address login gate)" data-provider="invalidMobileNumbers" finished-at="2026-10-16T00:04:43 IST" duration-ms="54069" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_LOC_11_B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Boundary: 9 digits]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[987654321]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for url to contain "auth-with-otp". Current url: "https://mcdelivery.co.in/" (tried for 45 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "auth-with-otp". Current url: "https://mcdelivery.co.in/" (tried for 45 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utilities.WaitUtils.waitForUrlContains(WaitUtils.java:58)
+at pages.LoginOtpPage.isLoaded(LoginOtpPage.java:36)
+at testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected(LocationNegativeTest.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidMobileNumberIsRejected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:04:43 IST" name="tearDown" finished-at="2026-10-16T00:04:46 IST" duration-ms="2865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:04:46 IST" name="setUp" finished-at="2026-10-16T00:04:50 IST" duration-ms="4573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyInvalidMobileNumberIsRejected(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:04:50 IST" name="verifyInvalidMobileNumberIsRejected" description="TC_LOC_11: Invalid mobile number keeps &#039;Verify Mobile&#039; disabled (address login gate)" data-provider="invalidMobileNumbers" finished-at="2026-10-16T00:04:59 IST" duration-ms="8224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_LOC_11_C]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Alphabets only (invalid class)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abcdefghij]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidMobileNumberIsRejected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:04:59 IST" name="tearDown" finished-at="2026-10-16T00:05:00 IST" duration-ms="1234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:00 IST" name="setUp" finished-at="2026-10-16T00:05:03 IST" duration-ms="2843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyInvalidMobileNumberIsRejected(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:03 IST" name="verifyInvalidMobileNumberIsRejected" description="TC_LOC_11: Invalid mobile number keeps &#039;Verify Mobile&#039; disabled (address login gate)" data-provider="invalidMobileNumbers" finished-at="2026-10-16T00:05:03 IST" duration-ms="701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_LOC_11_D]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Special characters (invalid class)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[@#$%^&*()!]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidMobileNumberIsRejected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:03 IST" name="tearDown" finished-at="2026-10-16T00:05:04 IST" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:04 IST" name="setUp" finished-at="2026-10-16T00:05:07 IST" duration-ms="3133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyInvalidMobileNumberIsRejected(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:11, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:07 IST" name="verifyInvalidMobileNumberIsRejected" description="TC_LOC_11: Invalid mobile number keeps &#039;Verify Mobile&#039; disabled (address login gate)" data-provider="invalidMobileNumbers" finished-at="2026-10-16T00:05:15 IST" duration-ms="7627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_LOC_11_E]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Blank mobile number]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidMobileNumberIsRejected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:15 IST" name="tearDown" finished-at="2026-10-16T00:05:15 IST" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:16 IST" name="setUp" finished-at="2026-10-16T00:05:19 IST" duration-ms="3088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMobileNumberMaxLength(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:19 IST" name="verifyMobileNumberMaxLength" description="TC_LOC_12: Mobile number longer than 10 digits is truncated to 10 (BVA)" data-provider="overLengthMobileNumbers" finished-at="2026-10-16T00:05:26 IST" duration-ms="7577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_LOC_12_A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Boundary: 11 digits is cut to 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[98765432101]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMobileNumberMaxLength -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:26 IST" name="tearDown" finished-at="2026-10-16T00:05:27 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:27 IST" name="setUp" finished-at="2026-10-16T00:05:30 IST" duration-ms="3714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMobileNumberMaxLength(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:12, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:30 IST" name="verifyMobileNumberMaxLength" description="TC_LOC_12: Mobile number longer than 10 digits is truncated to 10 (BVA)" data-provider="overLengthMobileNumbers" finished-at="2026-10-16T00:05:39 IST" duration-ms="8366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_LOC_12_B]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14 digits is cut to 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[98765432101234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMobileNumberMaxLength -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationNegativeTest@76505305]" started-at="2026-10-16T00:05:39 IST" name="tearDown" finished-at="2026-10-16T00:05:40 IST" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testModules.location.tests.LocationNegativeTest -->
+      <class name="testModules.location.tests.LocationModuleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:58:44 IST" name="setUp" finished-at="2026-10-15T23:59:04 IST" duration-ms="19845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageTitle()[pri:1, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:59:04 IST" name="verifyHomePageTitle" description="TC_LOC_01: Home page title contains McDelivery" finished-at="2026-10-15T23:59:04 IST" duration-ms="757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:59:04 IST" name="tearDown" finished-at="2026-10-15T23:59:05 IST" duration-ms="711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:59:05 IST" name="setUp" finished-at="2026-10-15T23:59:12 IST" duration-ms="6482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageUrl()[pri:2, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:59:12 IST" name="verifyHomePageUrl" description="TC_LOC_02: Home page opens on the McDelivery India domain" finished-at="2026-10-15T23:59:12 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:59:12 IST" name="tearDown" finished-at="2026-10-15T23:59:12 IST" duration-ms="565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:59:12 IST" name="setUp" finished-at="2026-10-15T23:59:19 IST" duration-ms="7160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLocationBarDisplayedAtTop()[pri:3, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:59:19 IST" name="verifyLocationBarDisplayedAtTop" description="TC_LOC_03: Location bar is displayed at the top of the page (Story 2)" finished-at="2026-10-15T23:59:30 IST" duration-ms="11180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLocationBarDisplayedAtTop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:59:30 IST" name="tearDown" finished-at="2026-10-15T23:59:32 IST" duration-ms="1552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:59:32 IST" name="setUp" finished-at="2026-10-15T23:59:35 IST" duration-ms="3288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyLocationBarOpensSelectDeliveryAddress()[pri:4, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-15T23:59:35 IST" name="verifyLocationBarOpensSelectDeliveryAddress" description="TC_LOC_04: Clicking the location bar opens &#039;Select Delivery Address&#039; (Story 1)" finished-at="2026-10-16T00:01:08 IST" duration-ms="92539" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01
+at pages.LocationPage.assertLocationBarReady(LocationPage.java:210)
+at pages.LocationPage.openSelectDeliveryAddress(LocationPage.java:142)
+at testModules.location.tests.LocationModuleTest.verifyLocationBarOpensSelectDeliveryAddress(LocationModuleTest.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLocationBarOpensSelectDeliveryAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:01:08 IST" name="tearDown" finished-at="2026-10-16T00:01:10 IST" duration-ms="1961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:01:10 IST" name="setUp" finished-at="2026-10-16T00:01:21 IST" duration-ms="11211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLocationBarOpensSelectDeliveryAddress()[pri:4, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:01:21 IST" name="verifyLocationBarOpensSelectDeliveryAddress" description="TC_LOC_04: Clicking the location bar opens &#039;Select Delivery Address&#039; (Story 1)" finished-at="2026-10-16T00:02:53 IST" duration-ms="92395" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01
+at pages.LocationPage.assertLocationBarReady(LocationPage.java:210)
+at pages.LocationPage.openSelectDeliveryAddress(LocationPage.java:142)
+at testModules.location.tests.LocationModuleTest.verifyLocationBarOpensSelectDeliveryAddress(LocationModuleTest.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLocationBarOpensSelectDeliveryAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:02:54 IST" name="tearDown" finished-at="2026-10-16T00:02:56 IST" duration-ms="2064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:02:56 IST" name="setUp" finished-at="2026-10-16T00:03:01 IST" duration-ms="4845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyGuestIsAskedToLoginToSelectAddress()[pri:5, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:03:01 IST" name="verifyGuestIsAskedToLoginToSelectAddress" description="TC_LOC_05: Guest user is asked to log in before choosing a delivery address (Story 1)" finished-at="2026-10-16T00:03:26 IST" duration-ms="25596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGuestIsAskedToLoginToSelectAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:03:26 IST" name="tearDown" finished-at="2026-10-16T00:03:28 IST" duration-ms="1604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:03:28 IST" name="setUp" finished-at="2026-10-16T00:03:33 IST" duration-ms="5186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAddressPanelClosesWithBackArrow()[pri:6, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:03:33 IST" name="verifyAddressPanelClosesWithBackArrow" description="TC_LOC_06: Back arrow closes the &#039;Select Delivery Address&#039; panel" finished-at="2026-10-16T00:03:48 IST" duration-ms="15281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddressPanelClosesWithBackArrow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:03:48 IST" name="tearDown" finished-at="2026-10-16T00:03:52 IST" duration-ms="3503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:03:52 IST" name="setUp" finished-at="2026-10-16T00:03:55 IST" duration-ms="3210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyDeliveryModeOptions()[pri:7, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:03:55 IST" name="verifyDeliveryModeOptions" description="TC_LOC_07: Delivery mode selector offers McDelivery and Take Away" finished-at="2026-10-16T00:04:40 IST" duration-ms="45420" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA['McDelivery' mode selector should be displayed next to the location expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 'McDelivery' mode selector should be displayed next to the location expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testModules.location.tests.LocationModuleTest.verifyDeliveryModeOptions(LocationModuleTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeliveryModeOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:04:40 IST" name="tearDown" finished-at="2026-10-16T00:04:41 IST" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:04:41 IST" name="setUp" finished-at="2026-10-16T00:04:44 IST" duration-ms="2910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDeliveryModeOptions()[pri:7, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:04:44 IST" name="verifyDeliveryModeOptions" description="TC_LOC_07: Delivery mode selector offers McDelivery and Take Away" finished-at="2026-10-16T00:05:29 IST" duration-ms="45251" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA['McDelivery' mode selector should be displayed next to the location expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 'McDelivery' mode selector should be displayed next to the location expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testModules.location.tests.LocationModuleTest.verifyDeliveryModeOptions(LocationModuleTest.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeliveryModeOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:05:29 IST" name="tearDown" finished-at="2026-10-16T00:05:33 IST" duration-ms="3331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:05:33 IST" name="setUp" finished-at="2026-10-16T00:05:37 IST" duration-ms="4122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLocationBarRetainedAfterRefresh()[pri:8, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:05:37 IST" name="verifyLocationBarRetainedAfterRefresh" description="TC_LOC_08: Location bar is still displayed after a page refresh (Story 2)" finished-at="2026-10-16T00:05:38 IST" duration-ms="1029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLocationBarRetainedAfterRefresh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:05:38 IST" name="tearDown" finished-at="2026-10-16T00:05:39 IST" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:05:39 IST" name="setUp" finished-at="2026-10-16T00:05:41 IST" duration-ms="2770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyRestaurantsNearbyNavigation()[pri:9, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:05:41 IST" name="verifyRestaurantsNearbyNavigation" description="TC_LOC_09: &#039;Restaurants Nearby&#039; opens the nearby restaurant locator" finished-at="2026-10-16T00:07:14 IST" duration-ms="92795" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01
+at pages.LocationPage.assertLocationBarReady(LocationPage.java:210)
+at pages.LocationPage.openRestaurantsNearby(LocationPage.java:197)
+at testModules.location.tests.LocationModuleTest.verifyRestaurantsNearbyNavigation(LocationModuleTest.java:135)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRestaurantsNearbyNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:07:14 IST" name="tearDown" finished-at="2026-10-16T00:07:16 IST" duration-ms="1415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:07:16 IST" name="setUp" finished-at="2026-10-16T00:07:20 IST" duration-ms="4399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRestaurantsNearbyNavigation()[pri:9, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:07:20 IST" name="verifyRestaurantsNearbyNavigation" description="TC_LOC_09: &#039;Restaurants Nearby&#039; opens the nearby restaurant locator" finished-at="2026-10-16T00:08:52 IST" duration-ms="92399" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01
+at pages.LocationPage.assertLocationBarReady(LocationPage.java:210)
+at pages.LocationPage.openRestaurantsNearby(LocationPage.java:197)
+at testModules.location.tests.LocationModuleTest.verifyRestaurantsNearbyNavigation(LocationModuleTest.java:135)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRestaurantsNearbyNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testModules.location.tests.LocationModuleTest@7d8995e]" started-at="2026-10-16T00:08:53 IST" name="tearDown" finished-at="2026-10-16T00:08:54 IST" duration-ms="1440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testModules.location.tests.LocationModuleTest -->
+    </test> <!-- Location Module Tests -->
+  </suite> <!-- McD Location Module Suite -->
+</testng-results>

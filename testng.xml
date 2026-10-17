@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- McDelivery India - Location module. Positive and negative classes run in parallel. -->
+<suite name="McD Location Module Suite" parallel="classes" thread-count="2" verbose="1">
+
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="Location Module Tests">
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+                <include name="negative"/>
+            </run>
+        </groups>
+
+        <classes>
+            <!-- Positive: location bar, Select Delivery Address panel, delivery mode, Restaurants Nearby -->
+            <class name="testModules.location.tests.LocationModuleTest"/>
+
+            <!-- Negative: no location shared, invalid mobile numbers (Apache POI data) -->
+            <class name="testModules.location.tests.LocationNegativeTest"/>
+        </classes>
+
+    </test>
+
+</suite>
