@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.WebDriver;
 
+import listeners.RetryOnBackendFlake;
 import pages.LocationPage;
 import utilities.ConfigReader;
 import utilities.DriverFactory;
@@ -49,7 +50,7 @@ class LocationJUnitTest {
                 () -> assertTrue(locationPage.getCurrentUrl().startsWith("https://mcdelivery.co.in"), "url"));
     }
 
-    @Test
+    @RetryOnBackendFlake
     @Order(2)
     @DisplayName("JU_LOC_02: Location bar is displayed at the top of the page")
     void locationBarDisplayedAtTop() {
@@ -57,7 +58,7 @@ class LocationJUnitTest {
         assertTrue(locationPage.getLocationBarTopOffset() < 150, "location bar should be in the header");
     }
 
-    @Test
+    @RetryOnBackendFlake
     @Order(3)
     @DisplayName("JU_LOC_03: Location bar opens 'Select Delivery Address'")
     void locationBarOpensAddressPanel() {

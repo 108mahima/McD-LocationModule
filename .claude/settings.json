@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Recurse -File src | Select-Object @{n='Path';e={$_.FullName.Replace\\('c:\\\\Users\\\\SONU\\\\Desktop\\\\Projects\\\\McD-LocationModule\\\\',''\\)}}, Length | Format-Table -AutoSize)",
+      "PowerShell(Get-ChildItem -Recurse -File docs, Reports, Screenshots -ErrorAction SilentlyContinue | Select-Object @{n='Path';e={$_.FullName.Replace\\('c:\\\\Users\\\\SONU\\\\Desktop\\\\Projects\\\\McD-LocationModule\\\\',''\\)}}, Length | Format-Table -AutoSize)",
+      "PowerShell(Select-String -Path \"Reports\\\\surefire\\\\testng-results.xml\" -Pattern 'testng-results|<test-method' | Select-Object -First 40 | ForEach-Object { $_.Line.Trim\\(\\) })",
+      "PowerShell(mvn -v)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"https://mcdelivery.co.in/\" -TimeoutSec 25 -UseBasicParsing; \"STATUS: $\\($r.StatusCode\\)\"; \"LENGTH: $\\($r.RawContentLength\\)\" } catch { \"FAILED: $\\($_.Exception.Message\\)\" })",
+      "PowerShell(\"=== git status ===\")",
+      "PowerShell(\"=== local vs remote ===\")",
+      "PowerShell(\"\\(empty above = nothing committed beyond remote\\)\")",
+      "PowerShell(\"=== reflog \\(any push/commit activity?\\) ===\")"
+    ]
+  }
+}

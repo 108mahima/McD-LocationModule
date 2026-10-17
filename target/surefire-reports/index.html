@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-McD_Location_Module_Suite" class="navigator-link">
+              <span class="suite-name border-skipped">McD Location Module Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-McD_Location_Module_Suite" class="navigator-link ">
+                    <span>C:\Users\SONU\Desktop\Projects\McD-LocationModule\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-McD_Location_Module_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-McD_Location_Module_Suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-McD_Location_Module_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-McD_Location_Module_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-McD_Location_Module_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-McD_Location_Module_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods,  1 skipped,  17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-McD_Location_Module_Suite" class="hide-methods skipped suite-McD_Location_Module_Suite"> (hide)</a> <!-- hide-methods skipped suite-McD_Location_Module_Suite -->
+                      <a href="#" panel-name="suite-McD_Location_Module_Suite" class="show-methods skipped suite-McD_Location_Module_Suite"> (show)</a> <!-- show-methods skipped suite-McD_Location_Module_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-McD_Location_Module_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationNegativeTest" class="method navigator-link" hash-for-method="verifyInvalidMobileNumberIsRejected(TC_LOC_11_D, Special characters (invalid class), @#$%^&amp;*()!, false)">verifyInvalidMobileNumberIsRejected(TC_LOC_11_D, Special characters (invalid class), @#$%^&*()!, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-McD_Location_Module_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-McD_Location_Module_Suite" class="hide-methods passed suite-McD_Location_Module_Suite"> (hide)</a> <!-- hide-methods passed suite-McD_Location_Module_Suite -->
+                      <a href="#" panel-name="suite-McD_Location_Module_Suite" class="show-methods passed suite-McD_Location_Module_Suite"> (show)</a> <!-- show-methods passed suite-McD_Location_Module_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-McD_Location_Module_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationModuleTest" class="method navigator-link" hash-for-method="verifyAddressPanelClosesWithBackArrow">verifyAddressPanelClosesWithBackArrow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationModuleTest" class="method navigator-link" hash-for-method="verifyDeliveryModeOptions">verifyDeliveryModeOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationModuleTest" class="method navigator-link" hash-for-method="verifyGuestIsAskedToLoginToSelectAddress">verifyGuestIsAskedToLoginToSelectAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationModuleTest" class="method navigator-link" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationModuleTest" class="method navigator-link" hash-for-method="verifyHomePageUrl">verifyHomePageUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationNegativeTest" class="method navigator-link" hash-for-method="verifyInvalidMobileNumberIsRejected(TC_LOC_11_E, Blank mobile number, , false)">verifyInvalidMobileNumberIsRejected(TC_LOC_11_E, Blank mobile number, , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationNegativeTest" class="method navigator-link" hash-for-method="verifyInvalidMobileNumberIsRejected(TC_LOC_11_C, Alphabets only (invalid class), abcdefghij, false)">verifyInvalidMobileNumberIsRejected(TC_LOC_11_C, Alphabets only (invalid class), abcdefghij, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationNegativeTest" class="method navigator-link" hash-for-method="verifyInvalidMobileNumberIsRejected(TC_LOC_11_D, Special characters (invalid class), @#$%^&amp;*()!, false)">verifyInvalidMobileNumberIsRejected(TC_LOC_11_D, Special characters (invalid class), @#$%^&*()!, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationNegativeTest" class="method navigator-link" hash-for-method="verifyInvalidMobileNumberIsRejected(TC_LOC_11_A, Less than 10 digits (BVA: 5), 12345, false)">verifyInvalidMobileNumberIsRejected(TC_LOC_11_A, Less than 10 digits (BVA: 5), 12345, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationNegativeTest" class="method navigator-link" hash-for-method="verifyInvalidMobileNumberIsRejected(TC_LOC_11_B, Boundary: 9 digits, 987654321, false)">verifyInvalidMobileNumberIsRejected(TC_LOC_11_B, Boundary: 9 digits, 987654321, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationModuleTest" class="method navigator-link" hash-for-method="verifyLocationBarDisplayedAtTop">verifyLocationBarDisplayedAtTop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationModuleTest" class="method navigator-link" hash-for-method="verifyLocationBarOpensSelectDeliveryAddress">verifyLocationBarOpensSelectDeliveryAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationModuleTest" class="method navigator-link" hash-for-method="verifyLocationBarRetainedAfterRefresh">verifyLocationBarRetainedAfterRefresh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationNegativeTest" class="method navigator-link" hash-for-method="verifyMobileNumberMaxLength(TC_LOC_12_A, Boundary: 11 digits is cut to 10, 98765432101, 9876543210)">verifyMobileNumberMaxLength(TC_LOC_12_A, Boundary: 11 digits is cut to 10, 98765432101, 9876543210)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationNegativeTest" class="method navigator-link" hash-for-method="verifyMobileNumberMaxLength(TC_LOC_12_B, 14 digits is cut to 10, 98765432101234, 9876543210)">verifyMobileNumberMaxLength(TC_LOC_12_B, 14 digits is cut to 10, 98765432101234, 9876543210)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationModuleTest" class="method navigator-link" hash-for-method="verifyRestaurantsNearbyNavigation">verifyRestaurantsNearbyNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-McD_Location_Module_Suite" title="testModules.location.tests.LocationNegativeTest" class="method navigator-link" hash-for-method="verifyRestaurantsNearbyWithoutLocation">verifyRestaurantsNearbyWithoutLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-McD_Location_Module_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-McD_Location_Module_Suite" class="panel McD_Location_Module_Suite">
+          <div class="suite-McD_Location_Module_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testModules.location.tests.LocationNegativeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidMobileNumberIsRejected(TC_LOC_11_D, Special characters (invalid class), @#$%^&amp;*()!, false)">
+                  </a> <!-- verifyInvalidMobileNumberIsRejected(TC_LOC_11_D, Special characters (invalid class), @#$%^&*()!, false) -->
+                  <span class="method-name">verifyInvalidMobileNumberIsRejected</span>
+                  <span class="parameters">(TC_LOC_11_D,Special characters (invalid class),@#$%^&*()!,false)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;auth-with-otp&quot;. Current url: &quot;https://mcdelivery.co.in/&quot; (tried for 45 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.WaitUtils.waitForUrlContains(WaitUtils.java:58)
+	at pages.LoginOtpPage.isLoaded(LoginOtpPage.java:36)
+	at testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected(LocationNegativeTest.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-McD_Location_Module_Suite-class-skipped -->
+          <div class="suite-McD_Location_Module_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testModules.location.tests.LocationNegativeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidMobileNumberIsRejected(TC_LOC_11_E, Blank mobile number, , false)">
+                  </a> <!-- verifyInvalidMobileNumberIsRejected(TC_LOC_11_E, Blank mobile number, , false) -->
+                  <span class="method-name">verifyInvalidMobileNumberIsRejected</span>
+                  <span class="parameters">(TC_LOC_11_E,Blank mobile number,,false)</span>
+                  <em>
+(TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidMobileNumberIsRejected(TC_LOC_11_C, Alphabets only (invalid class), abcdefghij, false)">
+                  </a> <!-- verifyInvalidMobileNumberIsRejected(TC_LOC_11_C, Alphabets only (invalid class), abcdefghij, false) -->
+                  <span class="method-name">verifyInvalidMobileNumberIsRejected</span>
+                  <span class="parameters">(TC_LOC_11_C,Alphabets only (invalid class),abcdefghij,false)</span>
+                  <em>
+(TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidMobileNumberIsRejected(TC_LOC_11_D, Special characters (invalid class), @#$%^&amp;*()!, false)">
+                  </a> <!-- verifyInvalidMobileNumberIsRejected(TC_LOC_11_D, Special characters (invalid class), @#$%^&*()!, false) -->
+                  <span class="method-name">verifyInvalidMobileNumberIsRejected</span>
+                  <span class="parameters">(TC_LOC_11_D,Special characters (invalid class),@#$%^&*()!,false)</span>
+                  <em>
+(TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidMobileNumberIsRejected(TC_LOC_11_A, Less than 10 digits (BVA: 5), 12345, false)">
+                  </a> <!-- verifyInvalidMobileNumberIsRejected(TC_LOC_11_A, Less than 10 digits (BVA: 5), 12345, false) -->
+                  <span class="method-name">verifyInvalidMobileNumberIsRejected</span>
+                  <span class="parameters">(TC_LOC_11_A,Less than 10 digits (BVA: 5),12345,false)</span>
+                  <em>
+(TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidMobileNumberIsRejected(TC_LOC_11_B, Boundary: 9 digits, 987654321, false)">
+                  </a> <!-- verifyInvalidMobileNumberIsRejected(TC_LOC_11_B, Boundary: 9 digits, 987654321, false) -->
+                  <span class="method-name">verifyInvalidMobileNumberIsRejected</span>
+                  <span class="parameters">(TC_LOC_11_B,Boundary: 9 digits,987654321,false)</span>
+                  <em>
+(TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMobileNumberMaxLength(TC_LOC_12_A, Boundary: 11 digits is cut to 10, 98765432101, 9876543210)">
+                  </a> <!-- verifyMobileNumberMaxLength(TC_LOC_12_A, Boundary: 11 digits is cut to 10, 98765432101, 9876543210) -->
+                  <span class="method-name">verifyMobileNumberMaxLength</span>
+                  <span class="parameters">(TC_LOC_12_A,Boundary: 11 digits is cut to 10,98765432101,9876543210)</span>
+                  <em>
+(TC_LOC_12: Mobile number longer than 10 digits is truncated to 10 (BVA))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMobileNumberMaxLength(TC_LOC_12_B, 14 digits is cut to 10, 98765432101234, 9876543210)">
+                  </a> <!-- verifyMobileNumberMaxLength(TC_LOC_12_B, 14 digits is cut to 10, 98765432101234, 9876543210) -->
+                  <span class="method-name">verifyMobileNumberMaxLength</span>
+                  <span class="parameters">(TC_LOC_12_B,14 digits is cut to 10,98765432101234,9876543210)</span>
+                  <em>
+(TC_LOC_12: Mobile number longer than 10 digits is truncated to 10 (BVA))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRestaurantsNearbyWithoutLocation">
+                  </a> <!-- verifyRestaurantsNearbyWithoutLocation -->
+                  <span class="method-name">verifyRestaurantsNearbyWithoutLocation</span>
+                  <em>
+(TC_LOC_10: Restaurants Nearby without a shared location shows 'not served' message)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-McD_Location_Module_Suite-class-passed -->
+          <div class="suite-McD_Location_Module_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testModules.location.tests.LocationModuleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddressPanelClosesWithBackArrow">
+                  </a> <!-- verifyAddressPanelClosesWithBackArrow -->
+                  <span class="method-name">verifyAddressPanelClosesWithBackArrow</span>
+                  <em>
+(TC_LOC_06: Back arrow closes the 'Select Delivery Address' panel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeliveryModeOptions">
+                  </a> <!-- verifyDeliveryModeOptions -->
+                  <span class="method-name">verifyDeliveryModeOptions</span>
+                  <em>
+(TC_LOC_07: Delivery mode selector offers McDelivery and Take Away)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyGuestIsAskedToLoginToSelectAddress">
+                  </a> <!-- verifyGuestIsAskedToLoginToSelectAddress -->
+                  <span class="method-name">verifyGuestIsAskedToLoginToSelectAddress</span>
+                  <em>
+(TC_LOC_05: Guest user is asked to log in before choosing a delivery address (Story 1))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitle">
+                  </a> <!-- verifyHomePageTitle -->
+                  <span class="method-name">verifyHomePageTitle</span>
+                  <em>
+(TC_LOC_01: Home page title contains McDelivery)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageUrl">
+                  </a> <!-- verifyHomePageUrl -->
+                  <span class="method-name">verifyHomePageUrl</span>
+                  <em>
+(TC_LOC_02: Home page opens on the McDelivery India domain)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLocationBarDisplayedAtTop">
+                  </a> <!-- verifyLocationBarDisplayedAtTop -->
+                  <span class="method-name">verifyLocationBarDisplayedAtTop</span>
+                  <em>
+(TC_LOC_03: Location bar is displayed at the top of the page (Story 2))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLocationBarOpensSelectDeliveryAddress">
+                  </a> <!-- verifyLocationBarOpensSelectDeliveryAddress -->
+                  <span class="method-name">verifyLocationBarOpensSelectDeliveryAddress</span>
+                  <em>
+(TC_LOC_04: Clicking the location bar opens 'Select Delivery Address' (Story 1))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLocationBarRetainedAfterRefresh">
+                  </a> <!-- verifyLocationBarRetainedAfterRefresh -->
+                  <span class="method-name">verifyLocationBarRetainedAfterRefresh</span>
+                  <em>
+(TC_LOC_08: Location bar is still displayed after a page refresh (Story 2))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRestaurantsNearbyNavigation">
+                  </a> <!-- verifyRestaurantsNearbyNavigation -->
+                  <span class="method-name">verifyRestaurantsNearbyNavigation</span>
+                  <em>
+(TC_LOC_09: 'Restaurants Nearby' opens the nearby restaurant locator)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-McD_Location_Module_Suite-class-passed -->
+        </div> <!-- panel McD_Location_Module_Suite -->
+        <div panel-name="test-xml-McD_Location_Module_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\SONU\Desktop\Projects\McD-LocationModule\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;McD Location Module Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Location Module Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
+        &lt;include name=&quot;negative&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testModules.location.tests.LocationModuleTest&quot;/&gt;
+      &lt;class name=&quot;testModules.location.tests.LocationNegativeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Location Module Tests --&gt;
+&lt;/suite&gt; &lt;!-- McD Location Module Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-McD_Location_Module_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for McD Location Module Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Location Module Tests (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-McD_Location_Module_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for McD Location Module Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">negative</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyInvalidMobileNumberIsRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyMobileNumberMaxLength</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRestaurantsNearbyWithoutLocation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAddressPanelClosesWithBackArrow</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDeliveryModeOptions</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyGuestIsAskedToLoginToSelectAddress</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyHomePageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyHomePageUrl</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyInvalidMobileNumberIsRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLocationBarDisplayedAtTop</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLocationBarOpensSelectDeliveryAddress</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLocationBarRetainedAfterRefresh</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyMobileNumberMaxLength</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRestaurantsNearbyNavigation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRestaurantsNearbyWithoutLocation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyHomePageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyHomePageUrl</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLocationBarDisplayedAtTop</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLocationBarOpensSelectDeliveryAddress</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRestaurantsNearbyNavigation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-McD_Location_Module_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for McD Location Module Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_McD_Location_Module_Suite');
+function tableData_McD_Location_Module_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyInvalidMobileNumberIsRejected')
+data.setCell(0, 2, 'testModules.location.tests.LocationNegativeTest')
+data.setCell(0, 3, 52594);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyInvalidMobileNumberIsRejected')
+data.setCell(1, 2, 'testModules.location.tests.LocationNegativeTest')
+data.setCell(1, 3, 7706);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyInvalidMobileNumberIsRejected')
+data.setCell(2, 2, 'testModules.location.tests.LocationNegativeTest')
+data.setCell(2, 3, 7512);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyInvalidMobileNumberIsRejected')
+data.setCell(3, 2, 'testModules.location.tests.LocationNegativeTest')
+data.setCell(3, 3, 7485);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyInvalidMobileNumberIsRejected')
+data.setCell(4, 2, 'testModules.location.tests.LocationNegativeTest')
+data.setCell(4, 3, 7333);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyMobileNumberMaxLength')
+data.setCell(5, 2, 'testModules.location.tests.LocationNegativeTest')
+data.setCell(5, 3, 7273);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyMobileNumberMaxLength')
+data.setCell(6, 2, 'testModules.location.tests.LocationNegativeTest')
+data.setCell(6, 3, 7252);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyGuestIsAskedToLoginToSelectAddress')
+data.setCell(7, 2, 'testModules.location.tests.LocationModuleTest')
+data.setCell(7, 3, 1895);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyAddressPanelClosesWithBackArrow')
+data.setCell(8, 2, 'testModules.location.tests.LocationModuleTest')
+data.setCell(8, 3, 1322);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyLocationBarDisplayedAtTop')
+data.setCell(9, 2, 'testModules.location.tests.LocationModuleTest')
+data.setCell(9, 3, 1169);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLocationBarOpensSelectDeliveryAddress')
+data.setCell(10, 2, 'testModules.location.tests.LocationModuleTest')
+data.setCell(10, 3, 854);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyRestaurantsNearbyNavigation')
+data.setCell(11, 2, 'testModules.location.tests.LocationModuleTest')
+data.setCell(11, 3, 741);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyRestaurantsNearbyWithoutLocation')
+data.setCell(12, 2, 'testModules.location.tests.LocationNegativeTest')
+data.setCell(12, 3, 640);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyDeliveryModeOptions')
+data.setCell(13, 2, 'testModules.location.tests.LocationModuleTest')
+data.setCell(13, 3, 585);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyLocationBarRetainedAfterRefresh')
+data.setCell(14, 2, 'testModules.location.tests.LocationModuleTest')
+data.setCell(14, 3, 253);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyInvalidMobileNumberIsRejected')
+data.setCell(15, 2, 'testModules.location.tests.LocationNegativeTest')
+data.setCell(15, 3, 235);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyHomePageTitle')
+data.setCell(16, 2, 'testModules.location.tests.LocationModuleTest')
+data.setCell(16, 3, 184);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyHomePageUrl')
+data.setCell(17, 2, 'testModules.location.tests.LocationModuleTest')
+data.setCell(17, 3, 12);
+window.suiteTableData['McD_Location_Module_Suite']= { tableData: data, tableDiv: 'times-div-McD_Location_Module_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-McD_Location_Module_Suite">
+              </div> <!-- times-div-McD_Location_Module_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-McD_Location_Module_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for McD Location Module Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-McD_Location_Module_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-McD_Location_Module_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationNegativeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationModuleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitle</span>
+                <span class="method-start">3023 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">3209 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">3324 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationNegativeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyRestaurantsNearbyWithoutLocation</span>
+                <span class="method-start">3892 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationModuleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageUrl</span>
+                <span class="method-start">4425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">4437 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationNegativeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">4533 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationModuleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">4578 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationNegativeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5045 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationModuleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLocationBarDisplayedAtTop</span>
+                <span class="method-start">5830 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationNegativeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidMobileNumberIsRejected(TC_LOC_11_A, Less than 10 digits (BVA: 5), 12345, false)</span>
+                <span class="method-start">6709 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationModuleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7001 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7140 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLocationBarOpensSelectDeliveryAddress</span>
+                <span class="method-start">9539 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10394 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10529 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyGuestIsAskedToLoginToSelectAddress</span>
+                <span class="method-start">11679 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13575 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">13690 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationNegativeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14417 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14690 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationModuleTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAddressPanelClosesWithBackArrow</span>
+                <span class="method-start">14931 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16254 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationNegativeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidMobileNumberIsRejected(TC_LOC_11_B, Boundary: 9 digits, 987654321, false)</span>
+                <span class="method-start">16336 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationModuleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16374 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDeliveryModeOptions</span>
+                <span class="method-start">18233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18819 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18959 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLocationBarRetainedAfterRefresh</span>
+                <span class="method-start">20187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">20440 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20545 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRestaurantsNearbyNavigation</span>
+                <span class="method-start">21684 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22425 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.location.tests.LocationNegativeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23848 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23977 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidMobileNumberIsRejected(TC_LOC_11_C, Alphabets only (invalid class), abcdefghij, false)</span>
+                <span class="method-start">25069 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32554 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32803 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidMobileNumberIsRejected(TC_LOC_11_D, Special characters (invalid class), @#$%^&*()!, false)</span>
+                <span class="method-start">34149 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">86745 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">87030 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidMobileNumberIsRejected(TC_LOC_11_D, Special characters (invalid class), @#$%^&*()!, false)</span>
+                <span class="method-start">89180 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">89416 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">89510 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidMobileNumberIsRejected(TC_LOC_11_E, Blank mobile number, , false)</span>
+                <span class="method-start">92354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">99688 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">99870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMobileNumberMaxLength(TC_LOC_12_A, Boundary: 11 digits is cut to 10, 98765432101, 9876543210)</span>
+                <span class="method-start">101073 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">108326 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">108522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMobileNumberMaxLength(TC_LOC_12_B, 14 digits is cut to 10, 98765432101234, 9876543210)</span>
+                <span class="method-start">109637 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">116911 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

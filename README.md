@@ -21,7 +21,7 @@ Only the Location module is automated. Search, Play Store, Customisation and Car
 - Clicking the location bar opens **Select Delivery Address**. A guest user only sees **Log In / Sign Up to Continue**, which leads to `/auth-with-otp` (10-digit mobile number + OTP).
 - Saving or selecting a delivery address needs a real OTP login, so it **cannot be automated**. The tests check everything up to the login gate and never request an OTP.
 - **Restaurants Nearby** (`/restaurants-nearby`) uses the browser location. If no location is shared, it shows *"Sorry, we do not serve this location yet"*.
-- The site backend is slow and sometimes never loads. The location bar then stays on "-" or skeleton loaders (see `docs/Defect_Report.md`). The framework waits up to 45s, reloads the page up to 2 times, and retries a failed test once.
+- The site backend is slow and sometimes never loads. The location bar then stays on "-" or skeleton loaders (see `docs/Defect_Report.md`). The framework waits up to 45s, reloads the page up to 2 times, and retries a failed test once (TestNG via `RetryAnalyzer`, JUnit 5 via `@RetryOnBackendFlake`).
 
 ## Project structure
 
@@ -38,7 +38,9 @@ McD-LocationModule
     ├── java
     │   ├── base/BaseTest.java                    Browser set-up / tear-down (TestNG)
     │   ├── listeners/TestListener.java           Extent report, screenshots, retry
-    │   ├── listeners/RetryAnalyzer.java
+    │   ├── listeners/RetryAnalyzer.java           Retry for TestNG tests
+    │   ├── listeners/RetryOnBackendFlake.java     Same retry policy for JUnit 5 tests
+    │   ├── listeners/RetryExtension.java
     │   ├── pages/LocationPage.java               Page Factory: location bar, address panel, mode
     │   ├── pages/LoginOtpPage.java               Page Factory: /auth-with-otp
     │   ├── pages/RestaurantsNearbyPage.java      Page Factory: /restaurants-nearby

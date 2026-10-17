@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>TestNG:  Location Module Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Location Module Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Oct 18 00:01:43 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>117 seconds (117133 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>negative regression smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testModules.location.tests.LocationModuleTest.verifyHomePageTitle()'><b>verifyHomePageTitle</b><br>Test class: testModules.location.tests.LocationModuleTest<br>Test method: TC_LOC_01: Home page title contains McDelivery</td>
+<td></td>
+<td>0</td>
+<td>testModules.location.tests.LocationModuleTest@10e41621</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationModuleTest.verifyAddressPanelClosesWithBackArrow()'><b>verifyAddressPanelClosesWithBackArrow</b><br>Test class: testModules.location.tests.LocationModuleTest<br>Test method: TC_LOC_06: Back arrow closes the 'Select Delivery Address' panel</td>
+<td></td>
+<td>1</td>
+<td>testModules.location.tests.LocationModuleTest@10e41621</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected()'><b>verifyInvalidMobileNumberIsRejected</b><br>Test class: testModules.location.tests.LocationNegativeTest<br>Test method: TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate)<br>Parameters: TC_LOC_11_E, Blank mobile number, , false</td>
+<td></td>
+<td>7</td>
+<td>testModules.location.tests.LocationNegativeTest@31c88ec8</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationModuleTest.verifyGuestIsAskedToLoginToSelectAddress()'><b>verifyGuestIsAskedToLoginToSelectAddress</b><br>Test class: testModules.location.tests.LocationModuleTest<br>Test method: TC_LOC_05: Guest user is asked to log in before choosing a delivery address (Story 1)</td>
+<td></td>
+<td>1</td>
+<td>testModules.location.tests.LocationModuleTest@10e41621</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationModuleTest.verifyDeliveryModeOptions()'><b>verifyDeliveryModeOptions</b><br>Test class: testModules.location.tests.LocationModuleTest<br>Test method: TC_LOC_07: Delivery mode selector offers McDelivery and Take Away</td>
+<td></td>
+<td>0</td>
+<td>testModules.location.tests.LocationModuleTest@10e41621</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationNegativeTest.verifyRestaurantsNearbyWithoutLocation()'><b>verifyRestaurantsNearbyWithoutLocation</b><br>Test class: testModules.location.tests.LocationNegativeTest<br>Test method: TC_LOC_10: Restaurants Nearby without a shared location shows 'not served' message</td>
+<td></td>
+<td>0</td>
+<td>testModules.location.tests.LocationNegativeTest@31c88ec8</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected()'><b>verifyInvalidMobileNumberIsRejected</b><br>Test class: testModules.location.tests.LocationNegativeTest<br>Test method: TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate)<br>Parameters: TC_LOC_11_C, Alphabets only (invalid class), abcdefghij, false</td>
+<td></td>
+<td>7</td>
+<td>testModules.location.tests.LocationNegativeTest@31c88ec8</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected()'><b>verifyInvalidMobileNumberIsRejected</b><br>Test class: testModules.location.tests.LocationNegativeTest<br>Test method: TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate)<br>Parameters: TC_LOC_11_D, Special characters (invalid class), @#$%^&*()!, false</td>
+<td></td>
+<td>0</td>
+<td>testModules.location.tests.LocationNegativeTest@31c88ec8</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationNegativeTest.verifyMobileNumberMaxLength()'><b>verifyMobileNumberMaxLength</b><br>Test class: testModules.location.tests.LocationNegativeTest<br>Test method: TC_LOC_12: Mobile number longer than 10 digits is truncated to 10 (BVA)<br>Parameters: TC_LOC_12_A, Boundary: 11 digits is cut to 10, 98765432101, 9876543210</td>
+<td></td>
+<td>7</td>
+<td>testModules.location.tests.LocationNegativeTest@31c88ec8</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationModuleTest.verifyRestaurantsNearbyNavigation()'><b>verifyRestaurantsNearbyNavigation</b><br>Test class: testModules.location.tests.LocationModuleTest<br>Test method: TC_LOC_09: 'Restaurants Nearby' opens the nearby restaurant locator</td>
+<td></td>
+<td>0</td>
+<td>testModules.location.tests.LocationModuleTest@10e41621</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected()'><b>verifyInvalidMobileNumberIsRejected</b><br>Test class: testModules.location.tests.LocationNegativeTest<br>Test method: TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate)<br>Parameters: TC_LOC_11_A, Less than 10 digits (BVA: 5), 12345, false</td>
+<td></td>
+<td>7</td>
+<td>testModules.location.tests.LocationNegativeTest@31c88ec8</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationModuleTest.verifyLocationBarRetainedAfterRefresh()'><b>verifyLocationBarRetainedAfterRefresh</b><br>Test class: testModules.location.tests.LocationModuleTest<br>Test method: TC_LOC_08: Location bar is still displayed after a page refresh (Story 2)</td>
+<td></td>
+<td>0</td>
+<td>testModules.location.tests.LocationModuleTest@10e41621</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected()'><b>verifyInvalidMobileNumberIsRejected</b><br>Test class: testModules.location.tests.LocationNegativeTest<br>Test method: TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate)<br>Parameters: TC_LOC_11_B, Boundary: 9 digits, 987654321, false</td>
+<td></td>
+<td>7</td>
+<td>testModules.location.tests.LocationNegativeTest@31c88ec8</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationModuleTest.verifyLocationBarOpensSelectDeliveryAddress()'><b>verifyLocationBarOpensSelectDeliveryAddress</b><br>Test class: testModules.location.tests.LocationModuleTest<br>Test method: TC_LOC_04: Clicking the location bar opens 'Select Delivery Address' (Story 1)</td>
+<td></td>
+<td>0</td>
+<td>testModules.location.tests.LocationModuleTest@10e41621</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationModuleTest.verifyLocationBarDisplayedAtTop()'><b>verifyLocationBarDisplayedAtTop</b><br>Test class: testModules.location.tests.LocationModuleTest<br>Test method: TC_LOC_03: Location bar is displayed at the top of the page (Story 2)</td>
+<td></td>
+<td>1</td>
+<td>testModules.location.tests.LocationModuleTest@10e41621</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationNegativeTest.verifyMobileNumberMaxLength()'><b>verifyMobileNumberMaxLength</b><br>Test class: testModules.location.tests.LocationNegativeTest<br>Test method: TC_LOC_12: Mobile number longer than 10 digits is truncated to 10 (BVA)<br>Parameters: TC_LOC_12_B, 14 digits is cut to 10, 98765432101234, 9876543210</td>
+<td></td>
+<td>7</td>
+<td>testModules.location.tests.LocationNegativeTest@31c88ec8</td></tr>
+<tr>
+<td title='testModules.location.tests.LocationModuleTest.verifyHomePageUrl()'><b>verifyHomePageUrl</b><br>Test class: testModules.location.tests.LocationModuleTest<br>Test method: TC_LOC_02: Home page opens on the McDelivery India domain</td>
+<td></td>
+<td>0</td>
+<td>testModules.location.tests.LocationModuleTest@10e41621</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected()'><b>verifyInvalidMobileNumberIsRejected</b><br>Test class: testModules.location.tests.LocationNegativeTest<br>Test method: TC_LOC_11: Invalid mobile number keeps 'Verify Mobile' disabled (address login gate)<br>Parameters: TC_LOC_11_D, Special characters (invalid class), @#$%^&*()!, false</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;auth-with-otp&quot;. Current url: &quot;https://mcdelivery.co.in/&quot; (tried for 45 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.WaitUtils.waitForUrlContains(WaitUtils.java:58)
+	at pages.LoginOtpPage.isLoaded(LoginOtpPage.java:36)
+	at testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected(LocationNegativeTest.java:52)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace152685990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace152685990'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;auth-with-otp&quot;. Current url: &quot;https://mcdelivery.co.in/&quot; (tried for 45 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.3&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.WaitUtils.waitForUrlContains(WaitUtils.java:58)
+	at pages.LoginOtpPage.isLoaded(LoginOtpPage.java:36)
+	at testModules.location.tests.LocationNegativeTest.verifyInvalidMobileNumberIsRejected(LocationNegativeTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>52</td>
+<td>testModules.location.tests.LocationNegativeTest@31c88ec8</td></tr>
+</table><p>
+</body>
+</html>

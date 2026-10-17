@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: testModules.location.junit.LocationJUnitTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 1, Time elapsed: 186.7 s <<< FAILURE! -- in testModules.location.junit.LocationJUnitTest
+testModules.location.junit.LocationJUnitTest.locationBarOpensAddressPanel()[2] -- Time elapsed: 91.88 s <<< ERROR!
+java.lang.IllegalStateException: Location bar never loaded from the backend (shows '-') - see defect DEF_LOC_01
+	at pages.LocationPage.assertLocationBarReady(LocationPage.java:225)
+	at pages.LocationPage.openSelectDeliveryAddress(LocationPage.java:142)
+	at testModules.location.junit.LocationJUnitTest.locationBarOpensAddressPanel(LocationJUnitTest.java:65)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
